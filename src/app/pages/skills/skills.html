@@ -1,0 +1,51 @@
+<section class="skills-page section">
+  <div class="container">
+    <p class="section-label">WHAT I WORK WITH</p>
+
+    <h1 class="skills-title">Technical <span class="accent">Skills.</span></h1>
+
+    <p class="skills-intro muted">
+      Technologies, tools, and practical skills I've developed through professional experience and
+      continuous learning.
+    </p>
+
+    <div class="skills-grid">
+      @for (category of categories; track category.title) {
+        <article class="skill-card">
+          <div class="skill-card-icon" aria-hidden="true">✦</div>
+
+          <h2>{{ category.title }}</h2>
+          <p class="muted skill-description">{{ category.description }}</p>
+
+          <div class="skill-tags">
+            @for (skill of category.skills; track skill) {
+              <span class="skill-tag">{{ skill }}</span>
+            }
+          </div>
+        </article>
+      }
+    </div>
+
+    <section class="learning-section">
+      <p class="section-label">CURRENT FOCUS</p>
+      <h2>Always <span class="accent">Improving.</span></h2>
+
+      <ul class="learning-list">
+        @for (item of currentlyLearning; track item) {
+          <li>
+            <span class="learning-check" aria-hidden="true">✓</span>
+            {{ item }}
+          </li>
+        }
+      </ul>
+    </section>
+
+    <div class="skills-cta">
+      <h2>Skills in action.</h2>
+      <p class="muted">Explore how I apply my technical knowledge.</p>
+      <a routerLink="/projects" class="btn btn-primary">
+        View Projects <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,149 @@
+
+.skills-page {
+  min-height: 70vh;
+  padding-top: 72px;
+  padding-bottom: 88px;
+}
+
+.skills-title {
+  margin: 12px 0 16px;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.skills-intro {
+  max-width: 680px;
+  line-height: 1.8;
+  margin-bottom: 44px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.skill-card {
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.skill-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.skill-card-icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 22px;
+  border-radius: 12px;
+  background: var(--surface-hover);
+  color: var(--accent);
+  font-size: 1.5rem;
+}
+
+.skill-card h2 {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.skill-description {
+  line-height: 1.8;
+  margin-bottom: 22px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.skill-tag {
+  padding: 7px 10px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--surface-hover);
+  color: var(--accent);
+  font-size: 0.82rem;
+}
+
+.learning-section {
+  margin-top: 64px;
+}
+
+.learning-section h2 {
+  font-size: 2rem;
+  margin: 12px 0 24px;
+}
+
+.learning-list {
+  display: grid;
+  gap: 14px;
+  list-style: none;
+  padding: 0;
+}
+
+.learning-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.learning-check {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.skills-cta {
+  margin-top: 48px;
+  padding: 32px;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.skills-cta h2 {
+  margin-bottom: 12px;
+}
+
+.skills-cta p {
+  margin-bottom: 22px;
+  line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+  .skills-page {
+    padding-top: 48px;
+    padding-bottom: 56px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card,
+  .skills-cta {
+    padding: 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skill-card {
+    transition: none;
+  }
+
+  .skill-card:hover {
+    transform: none;
+  }
+}

@@ -1,0 +1,102 @@
+<!-- HOME HERO SECTION -->
+<section class="hero section">
+  <div class="container hero-grid">
+    <div class="hero-content">
+      <p class="section-label">HELLO, I'M AMIR ZIYAN</p>
+
+      <h1>
+        Building useful things with
+        <span class="accent">code.</span>
+      </h1>
+
+      <h2 class="hero-role">Software Developer | Database Developer</h2>
+
+      <p class="hero-description muted">
+        I work with SQL and PL/SQL and am expanding my skills in modern web development. I enjoy
+        solving problems, learning new technologies, and building practical software.
+      </p>
+
+      <div class="hero-actions">
+        <a routerLink="/projects" class="btn btn-primary">
+          View My Projects
+          <span aria-hidden="true">↗</span>
+        </a>
+
+        <a
+          href="/file/AMIR-ZIYAN-RESUME_L.pdf"
+          class="btn btn-secondary"
+          download="Amir-Ziyan-Resume.pdf"
+        >
+          Download Résumé
+          <span aria-hidden="true">↓</span>
+        </a>
+        ```
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://github.com/AmirZiyan" target="_blank" rel="noopener noreferrer">
+          GitHub ↗
+        </a>
+
+        <a routerLink="/contact"> Contact Me ↗ </a>
+      </div>
+    </div>
+
+    <!-- PROFILE IMAGE -->
+    <div class="hero-visual">
+      <div class="hero-image-frame">
+        <img src="/images/amir-profile.png" alt="Amir Ziyan" class="hero-image" />
+      </div>
+
+      <div class="hero-image-caption">
+        <span class="status-dot"></span>
+        Always learning. Always building.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECHNOLOGIES SECTION -->
+<section class="tech-section">
+  <div class="container">
+    <p class="section-label">TECHNOLOGIES I WORK WITH</p>
+
+    <div class="tech-list">
+      @for (technology of technologies; track technology) {
+        <span class="technology-tag">
+          {{ technology }}
+        </span>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT PREVIEW SECTION -->
+<section class="home-about section">
+  <div class="container home-about-layout">
+    <div>
+      <p class="section-label">A LITTLE ABOUT MY WORK</p>
+
+      <h2 class="home-about-title">
+        Turning ideas into
+        <span class="accent">reality.</span>
+      </h2>
+    </div>
+
+    <a routerLink="/projects" class="home-about-project-link"> Explore projects ↗ </a>
+
+    <article class="home-about-card">
+      <h3>Technology meets creativity.</h3>
+
+      <p class="muted">
+        From database development and software engineering to exploring new technologies, I'm
+        interested in continuously learning, building, and challenging myself.
+      </p>
+
+      <a routerLink="/about" class="home-about-link">
+        More about me
+        <span aria-hidden="true">↗</span>
+      </a>
+    </article>
+  </div>
+</section>

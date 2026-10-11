@@ -1,0 +1,63 @@
+<section class="education-page section">
+  <div class="container">
+    <p class="section-label">MY BACKGROUND</p>
+
+    <h1 class="education-title">Education <span class="accent">& Learning.</span></h1>
+
+    <p class="education-intro muted">
+      My academic foundation and the technical skills I continue to develop through practical
+      experience and self-learning.
+    </p>
+
+    <div class="education-grid">
+      @for (item of education; track item.degree) {
+        <article class="education-card">
+          <div class="education-card-top">
+            <span class="education-icon" aria-hidden="true">✦</span>
+            <span class="education-category">{{ item.category }}</span>
+          </div>
+
+          <h2>{{ item.degree }}</h2>
+
+          <p class="institution">{{ item.institution }}</p>
+
+          <span class="education-period">{{ item.period }}</span>
+
+          <p class="education-description muted">
+            {{ item.description }}
+          </p>
+
+          <h3>Areas of study</h3>
+
+          <div class="education-tags">
+            @for (subject of item.subjects; track subject) {
+              <span class="education-tag">{{ subject }}</span>
+            }
+          </div>
+        </article>
+      }
+    </div>
+
+    <div class="learning-section">
+      <p class="section-label">CONTINUOUS IMPROVEMENT</p>
+      <h2>Learning <span class="accent">in Progress.</span></h2>
+
+      <div class="learning-grid">
+        @for (item of learning; track item.title) {
+          <article class="learning-card">
+            <h3>{{ item.title }}</h3>
+            <p class="muted">{{ item.description }}</p>
+          </article>
+        }
+      </div>
+    </div>
+
+    <div class="education-cta">
+      <h2>Learning never stops.</h2>
+      <p class="muted">Explore the technical skills I am developing and applying.</p>
+      <a routerLink="/skills" class="btn btn-primary">
+        Explore My Skills <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </div>
+</section>

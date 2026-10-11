@@ -1,0 +1,60 @@
+<section class="experience-page section">
+  <div class="container">
+    <p class="section-label">MY JOURNEY</p>
+
+    <h1 class="experience-title">Work <span class="accent">Experience.</span></h1>
+
+    <p class="experience-intro muted">
+      My professional journey in database development, technical support, testing, and software
+      engineering.
+    </p>
+
+    <div class="experience-timeline">
+      <article class="experience-card">
+        <div class="timeline-marker"></div>
+
+        <div class="experience-card-header">
+          <div>
+            <p class="section-label">PROFESSIONAL EXPERIENCE</p>
+            <h2>PetroInfoTech</h2>
+            <h3>Database Developer / DB Support</h3>
+          </div>
+
+          <span class="experience-period">May 2025 – Present</span>
+        </div>
+
+        <p class="experience-summary muted">
+          Working with database development and support activities, contributing to database-related
+          tasks, testing, troubleshooting, and technical documentation.
+        </p>
+
+        <h4>Key Responsibilities</h4>
+
+        <ul class="responsibility-list">
+          @for (item of responsibilities; track item) {
+            <li>{{ item }}</li>
+          }
+        </ul>
+
+        <h4>Technologies & Skills</h4>
+
+        <div class="experience-technologies">
+          @for (technology of technologies; track technology) {
+            <span class="technology-tag">{{ technology }}</span>
+          }
+        </div>
+      </article>
+    </div>
+
+    <div class="experience-note card">
+      <h2>Always <span class="accent">Learning.</span></h2>
+      <p class="muted">
+        Continuously improving my database development skills while expanding my knowledge of
+        software engineering and modern web technologies.
+      </p>
+      <a routerLink="/projects" class="btn btn-secondary">
+        Explore My Projects <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,353 @@
+
+
+.about-hero {
+  padding-top: 76px;
+  padding-bottom: 58px;
+  border-bottom: 1px solid var(--border);
+}
+
+.about-hero .section-label {
+  margin-bottom: 16px;
+}
+
+.about-title {
+  margin: 0 0 18px;
+  color: var(--text);
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+}
+
+.about-subtitle {
+  max-width: 680px;
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   SHARED SECTION STYLES
+========================= */
+
+.about-section {
+  padding: 68px 0;
+}
+
+.about-section-heading {
+  max-width: 700px;
+  margin-bottom: 32px;
+}
+
+.about-section-heading .section-label {
+  margin-bottom: 14px;
+}
+
+.about-section-heading h2,
+.about-intro-content h2 {
+  margin: 0 0 16px;
+  color: var(--text);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 750;
+  letter-spacing: -0.035em;
+  line-height: 1.25;
+}
+
+.about-section-heading > p:last-child {
+  line-height: 1.8;
+}
+
+
+/* =========================
+   INTRODUCTION
+========================= */
+
+.about-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(260px, 0.8fr);
+  align-items: start;
+  gap: 48px;
+}
+
+.about-intro-content > .section-label {
+  margin-bottom: 14px;
+}
+
+.about-intro-content h2 {
+  margin-bottom: 22px;
+}
+
+.about-intro-content > p:not(.section-label) {
+  margin: 0 0 18px;
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+
+/* =========================
+   PROFILE CARD
+========================= */
+
+.about-profile-card {
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+
+.about-profile-icon {
+  display: flex;
+  width: 58px;
+  height: 58px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border: 1px solid rgb(77 163 255 / 35%);
+  border-radius: 12px;
+  background: rgb(77 163 255 / 10%);
+  color: var(--accent);
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.about-profile-card h3 {
+  margin: 0 0 6px;
+  color: var(--text);
+  font-size: 1.3rem;
+}
+
+.about-profile-card > p {
+  margin: 0;
+}
+
+.about-profile-divider {
+  height: 1px;
+  margin: 22px 0;
+  background: var(--border);
+}
+
+.about-profile-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.about-profile-detail:last-child {
+  margin-bottom: 0;
+}
+
+.about-profile-detail span {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.about-profile-detail strong {
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   WORK AREAS
+========================= */
+
+.about-work-section,
+.about-strengths-section {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: rgb(255 255 255 / 1%);
+}
+
+.about-work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.about-work-card,
+.about-strength-card {
+  min-width: 0;
+  padding: 26px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  transition: border-color 0.2s ease;
+}
+
+.about-work-card:hover,
+.about-strength-card:hover {
+  border-color: rgb(77 163 255 / 50%);
+}
+
+.about-card-number {
+  margin-bottom: 22px;
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.about-work-card h3,
+.about-strength-card h3 {
+  margin: 0 0 12px;
+  color: var(--text);
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.about-work-card p,
+.about-strength-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   TECHNICAL SKILLS
+========================= */
+
+.about-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.about-tech-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 11px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.92rem;
+  font-weight: 500;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.about-tech-tag:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+
+/* =========================
+   STRENGTHS
+========================= */
+
+.about-strengths-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+
+/* =========================
+   CLOSING CTA
+========================= */
+
+.about-cta-section {
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+.about-cta-card {
+  padding: clamp(28px, 5vw, 52px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+
+.about-cta-card .section-label {
+  margin-bottom: 16px;
+}
+
+.about-cta-card h2 {
+  max-width: 700px;
+  margin: 0 0 16px;
+  color: var(--text);
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-weight: 750;
+  letter-spacing: -0.04em;
+  line-height: 1.25;
+}
+
+.about-cta-card > p:not(.section-label) {
+  max-width: 650px;
+  margin: 0 0 26px;
+  line-height: 1.8;
+}
+
+.about-cta-card .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+  .about-intro-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 0.8fr);
+    gap: 28px;
+  }
+
+  .about-work-grid,
+  .about-strengths-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .about-hero {
+    padding-top: 48px;
+    padding-bottom: 42px;
+  }
+
+  .about-section {
+    padding: 48px 0;
+  }
+
+  .about-intro-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
+  }
+
+  .about-profile-card {
+    padding: 24px;
+  }
+
+  .about-work-grid,
+  .about-strengths-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .about-work-card,
+  .about-strength-card {
+    padding: 23px;
+  }
+
+  .about-cta-section {
+    padding-top: 12px;
+    padding-bottom: 52px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-work-card,
+  .about-strength-card,
+  .about-tech-tag {
+    transition: none;
+  }
+}

@@ -1,0 +1,160 @@
+
+.interests-page {
+  min-height: 70vh;
+  padding-top: 72px;
+  padding-bottom: 88px;
+}
+
+.interests-title {
+  margin: 12px 0 16px;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.interests-intro {
+  max-width: 680px;
+  line-height: 1.8;
+  margin-bottom: 44px;
+}
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.interest-card {
+  padding: 28px;
+  min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.interest-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.interest-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.interest-symbol {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  background: var(--surface-hover);
+  color: var(--accent);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.interest-number {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.interest-card h2 {
+  font-size: 1.5rem;
+  margin: 12px 0;
+}
+
+.interest-description {
+  line-height: 1.9;
+  margin-bottom: 24px;
+}
+
+.interest-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.interest-tag {
+  padding: 7px 10px;
+  background: var(--surface-hover);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  color: var(--accent);
+  font-size: 0.8rem;
+}
+
+.interests-quote {
+  margin-top: 64px;
+  padding: 36px;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.quote-mark {
+  display: block;
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.interests-quote h2 {
+  max-width: 650px;
+  margin: 12px auto;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  line-height: 1.5;
+}
+
+.interests-quote p {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.interests-cta {
+  margin-top: 32px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.interests-cta h2 {
+  margin-bottom: 12px;
+}
+
+.interests-cta p {
+  margin-bottom: 22px;
+  line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+  .interests-page {
+    padding-top: 48px;
+    padding-bottom: 56px;
+  }
+
+  .interests-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .interest-card,
+  .interests-quote,
+  .interests-cta {
+    padding: 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .interest-card {
+    transition: none;
+  }
+
+  .interest-card:hover {
+    transform: none;
+  }
+}

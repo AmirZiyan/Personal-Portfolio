@@ -1,0 +1,176 @@
+
+.education-page {
+  min-height: 70vh;
+  padding-top: 72px;
+  padding-bottom: 88px;
+}
+
+.education-title {
+  margin: 12px 0 16px;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.education-intro {
+  max-width: 680px;
+  line-height: 1.8;
+  margin-bottom: 44px;
+}
+
+.education-grid,
+.learning-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.education-card,
+.learning-card {
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.education-card:hover,
+.learning-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.education-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.education-icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: var(--surface-hover);
+  color: var(--accent);
+  font-size: 1.5rem;
+}
+
+.education-category,
+.education-period {
+  font-size: 0.8rem;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 7px 11px;
+}
+
+.education-card h2 {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.institution {
+  color: var(--accent);
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.education-period {
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+.education-description,
+.learning-card p {
+  line-height: 1.8;
+}
+
+.education-card h3 {
+  font-size: 0.95rem;
+  margin: 24px 0 14px;
+}
+
+.education-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.education-tag {
+  padding: 7px 10px;
+  background: var(--surface-hover);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  color: var(--accent);
+  font-size: 0.8rem;
+}
+
+.learning-section {
+  margin-top: 64px;
+}
+
+.learning-section > h2 {
+  font-size: 2rem;
+  margin: 12px 0 24px;
+}
+
+.learning-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.education-cta {
+  margin-top: 48px;
+  padding: 32px;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.education-cta h2 {
+  margin-bottom: 12px;
+}
+
+.education-cta p {
+  line-height: 1.8;
+  margin-bottom: 22px;
+}
+
+@media (max-width: 700px) {
+  .education-page {
+    padding-top: 48px;
+    padding-bottom: 56px;
+  }
+
+  .education-grid,
+  .learning-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-card,
+  .learning-card {
+    padding: 22px;
+  }
+
+  .education-cta {
+    padding: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .education-card,
+  .learning-card {
+    transition: none;
+  }
+
+  .education-card:hover,
+  .learning-card:hover {
+    transform: none;
+  }
+}

@@ -1,0 +1,32 @@
+<header class="navbar">
+  <div class="container nav-inner">
+    <a class="brand" routerLink="/" (click)="closeMenu()">AZ<span>.</span></a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Toggle navigation"
+      [attr.aria-expanded]="menuOpen"
+      (click)="menuOpen = !menuOpen"
+    >
+      {{ menuOpen ? 'Close' : 'Menu' }}
+    </button>
+
+    <nav class="nav-links" [class.open]="menuOpen" aria-label="Main navigation">
+      <a
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        (click)="closeMenu()"
+        >Home</a
+      >
+      <a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">About</a>
+      <a routerLink="/projects" routerLinkActive="active" (click)="closeMenu()">Projects</a>
+      <a routerLink="/experience" routerLinkActive="active" (click)="closeMenu()">Experience</a>
+      <a routerLink="/education" routerLinkActive="active" (click)="closeMenu()">Education</a>
+      <a routerLink="/skills" routerLinkActive="active" (click)="closeMenu()">Skills</a>
+      <a routerLink="/interests" routerLinkActive="active" (click)="closeMenu()">Interests</a>
+      <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact ↗</a>
+    </nav>
+  </div>
+</header>

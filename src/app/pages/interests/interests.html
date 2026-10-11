@@ -1,0 +1,54 @@
+<section class="interests-page section">
+  <div class="container">
+    <p class="section-label">BEYOND THE CODE</p>
+
+    <h1 class="interests-title">My <span class="accent">Interests.</span></h1>
+
+    <p class="interests-intro muted">
+      The activities and passions that inspire my creativity, discipline, curiosity, and personal
+      growth.
+    </p>
+
+    <div class="interests-grid">
+      @for (interest of interests; track interest.number) {
+        <article class="interest-card">
+          <div class="interest-card-top">
+            <span class="interest-symbol" aria-hidden="true">
+              {{ interest.symbol }}
+            </span>
+            <span class="interest-number">{{ interest.number }}</span>
+          </div>
+
+          <p class="section-label">{{ interest.subtitle }}</p>
+          <h2>{{ interest.title }}</h2>
+          <p class="interest-description muted">
+            {{ interest.description }}
+          </p>
+
+          <div class="interest-tags">
+            @for (tag of interest.tags; track tag) {
+              <span class="interest-tag">{{ tag }}</span>
+            }
+          </div>
+        </article>
+      }
+    </div>
+
+    <div class="interests-quote">
+      <span class="quote-mark accent" aria-hidden="true">“</span>
+      <h2>Stay curious. Keep creating. Never stop improving.</h2>
+      <p class="muted">
+        Building technical skills while making time for creativity and the things that make life
+        meaningful.
+      </p>
+    </div>
+
+    <div class="interests-cta">
+      <h2>Let's connect.</h2>
+      <p class="muted">Have something interesting to discuss or build together?</p>
+      <a routerLink="/contact" class="btn btn-primary">
+        Contact Me <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </div>
+</section>
